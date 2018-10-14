@@ -1,0 +1,69 @@
+11:11:48.171 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'metricWritersMetricExporter'
+11:11:48.171 [main] DEBUG o.a.camel.spring.SpringCamelContext - onApplicationEvent: org.springframework.context.event.ContextRefreshedEvent[source=org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@72999400: startup date [Sun Oct 14 11:11:38 IST 2018]; root of context hierarchy]
+11:11:48.171 [main] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Could not find key 'spring.liveBeansView.mbeanDomain' in any property source
+11:11:48.171 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
+11:11:48.171 [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+11:11:48.171 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+11:11:48.171 [main] DEBUG o.a.camel.spring.SpringCamelContext - onApplicationEvent: org.springframework.boot.context.embedded.EmbeddedServletContainerInitializedEvent[source=org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer@1c87f645]
+11:11:48.186 [main] DEBUG o.a.camel.spring.SpringCamelContext - onApplicationEvent: org.springframework.boot.context.event.ApplicationReadyEvent[source=org.springframework.boot.SpringApplication@12e4c74]
+11:11:48.186 [main] INFO  org.mycompany.Application - Started Application in 10.446 seconds (JVM running for 16.397)
+11:11:49.033 [Camel (MyCamel) thread #1 - jpa://org.mycompany.CamelTest] DEBUG o.s.orm.jpa.JpaTransactionManager - Creating new transaction with name [null]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+11:11:49.036 [Camel (MyCamel) thread #1 - jpa://org.mycompany.CamelTest] DEBUG o.s.orm.jpa.JpaTransactionManager - Opened new EntityManager [SessionImpl(1742023411<open>)] for JPA transaction
+11:11:49.037 [Camel (MyCamel) thread #1 - jpa://org.mycompany.CamelTest] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+11:11:49.037 [Camel (MyCamel) thread #1 - jpa://org.mycompany.CamelTest] DEBUG o.h.e.t.internal.TransactionImpl - begin
+11:11:49.037 [Camel (MyCamel) thread #1 - jpa://org.mycompany.CamelTest] DEBUG o.s.j.d.DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:mysql://localhost:3306/trail]
+Sun Oct 14 11:11:49 IST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+11:11:49.045 [Camel (MyCamel) thread #1 - jpa://org.mycompany.CamelTest] DEBUG o.s.orm.jpa.JpaTransactionManager - Not exposing JPA transaction [SessionImpl(1742023411<open>)] as JDBC transaction because JpaDialect [org.springframework.orm.jpa.DefaultJpaDialect@7f9fe1d6] does not support JDBC Connection retrieval
+11:11:49.045 [Camel (MyCamel) thread #1 - jpa://org.mycompany.CamelTest] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+11:11:49.045 [Camel (MyCamel) thread #1 - jpa://org.mycompany.CamelTest] DEBUG o.h.e.t.internal.TransactionImpl - begin
+11:11:49.045 [Camel (MyCamel) thread #1 - jpa://org.mycompany.CamelTest] DEBUG o.s.j.d.DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:mysql://localhost:3306/trail]
+Sun Oct 14 11:11:49 IST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+11:11:49.045 [Camel (MyCamel) thread #1 - jpa://org.mycompany.CamelTest] DEBUG o.s.o.j.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler - Starting resource-local transaction on application-managed EntityManager [SessionImpl(1884779632<open>)]
+11:11:49.045 [Camel (MyCamel) thread #1 - jpa://org.mycompany.CamelTest] DEBUG o.s.o.j.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler - Joined local transaction
+11:11:49.077 [Camel (MyCamel) thread #1 - jpa://org.mycompany.CamelTest] DEBUG org.hibernate.SQL - select cameltest0_.seq_no as seq_no1_0_, cameltest0_.column1 as column2_0_, cameltest0_.column2 as column3_0_, cameltest0_.column3 as column4_0_, cameltest0_.column4 as column5_0_, cameltest0_.status as status6_0_ from camel_test cameltest0_
+11:11:49.077 [Camel (MyCamel) thread #1 - jpa://org.mycompany.CamelTest] DEBUG org.hibernate.loader.Loader - Result set row: 0
+11:11:49.092 [Camel (MyCamel) thread #1 - jpa://org.mycompany.CamelTest] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[org.mycompany.CamelTest#1]
+11:11:49.092 [Camel (MyCamel) thread #1 - jpa://org.mycompany.CamelTest] DEBUG org.hibernate.loader.Loader - Result set row: 1
+11:11:49.092 [Camel (MyCamel) thread #1 - jpa://org.mycompany.CamelTest] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[org.mycompany.CamelTest#2]
+11:11:49.092 [Camel (MyCamel) thread #1 - jpa://org.mycompany.CamelTest] DEBUG org.hibernate.loader.Loader - Result set row: 2
+11:11:49.092 [Camel (MyCamel) thread #1 - jpa://org.mycompany.CamelTest] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[org.mycompany.CamelTest#3]
+11:11:49.092 [Camel (MyCamel) thread #1 - jpa://org.mycompany.CamelTest] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [org.mycompany.CamelTest#1]
+11:11:49.092 [Camel (MyCamel) thread #1 - jpa://org.mycompany.CamelTest] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [org.mycompany.CamelTest#1]
+11:11:49.092 [Camel (MyCamel) thread #1 - jpa://org.mycompany.CamelTest] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [org.mycompany.CamelTest#2]
+11:11:49.092 [Camel (MyCamel) thread #1 - jpa://org.mycompany.CamelTest] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [org.mycompany.CamelTest#2]
+11:11:49.092 [Camel (MyCamel) thread #1 - jpa://org.mycompany.CamelTest] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [org.mycompany.CamelTest#3]
+11:11:49.092 [Camel (MyCamel) thread #1 - jpa://org.mycompany.CamelTest] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [org.mycompany.CamelTest#3]
+11:11:49.108 [Camel (MyCamel) thread #1 - jpa://org.mycompany.CamelTest] DEBUG o.a.camel.component.jpa.JpaConsumer - Acquiring exclusive lock on entity: CamelTest [seq_no=1, status=ACT, column1=AAA, column2=BBB, column3=5, column4=null]
+11:11:49.108 [Camel (MyCamel) thread #1 - jpa://org.mycompany.CamelTest] DEBUG org.hibernate.SQL - select seq_no from camel_test where seq_no =? for update
+11:11:49.108 [Camel (MyCamel) thread #1 - jpa://org.mycompany.CamelTest] DEBUG o.h.r.j.i.ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+11:11:49.108 [Camel (MyCamel) thread #1 - jpa://org.mycompany.CamelTest] DEBUG o.a.camel.component.jpa.JpaConsumer - Processing exchange: Exchange[]
+11:11:49.108 [Camel (MyCamel) thread #1 - jpa://org.mycompany.CamelTest] INFO  simple-route - >>> CamelTest [seq_no=1, status=ACT, column1=AAA, column2=BBB, column3=5, column4=null]
+11:11:49.124 [Camel (MyCamel) thread #1 - jpa://org.mycompany.CamelTest] DEBUG o.a.camel.component.jpa.JpaConsumer - Acquiring exclusive lock on entity: CamelTest [seq_no=2, status=ACT, column1=AAA, column2=BBB, column3=5, column4=null]
+11:11:49.124 [Camel (MyCamel) thread #1 - jpa://org.mycompany.CamelTest] DEBUG org.hibernate.SQL - select seq_no from camel_test where seq_no =? for update
+11:11:49.124 [Camel (MyCamel) thread #1 - jpa://org.mycompany.CamelTest] DEBUG o.h.r.j.i.ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+11:11:49.124 [Camel (MyCamel) thread #1 - jpa://org.mycompany.CamelTest] DEBUG o.a.camel.component.jpa.JpaConsumer - Processing exchange: Exchange[]
+11:11:49.124 [Camel (MyCamel) thread #1 - jpa://org.mycompany.CamelTest] INFO  simple-route - >>> CamelTest [seq_no=2, status=ACT, column1=AAA, column2=BBB, column3=5, column4=null]
+11:11:49.124 [Camel (MyCamel) thread #1 - jpa://org.mycompany.CamelTest] DEBUG o.a.camel.component.jpa.JpaConsumer - Acquiring exclusive lock on entity: CamelTest [seq_no=3, status=ACT, column1=AAA, column2=BBB, column3=5, column4=null]
+11:11:49.124 [Camel (MyCamel) thread #1 - jpa://org.mycompany.CamelTest] DEBUG org.hibernate.SQL - select seq_no from camel_test where seq_no =? for update
+11:11:49.124 [Camel (MyCamel) thread #1 - jpa://org.mycompany.CamelTest] DEBUG o.h.r.j.i.ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+11:11:49.124 [Camel (MyCamel) thread #1 - jpa://org.mycompany.CamelTest] DEBUG o.a.camel.component.jpa.JpaConsumer - Processing exchange: Exchange[]
+11:11:49.124 [Camel (MyCamel) thread #1 - jpa://org.mycompany.CamelTest] INFO  simple-route - >>> CamelTest [seq_no=3, status=ACT, column1=AAA, column2=BBB, column3=5, column4=null]
+11:11:49.124 [Camel (MyCamel) thread #1 - jpa://org.mycompany.CamelTest] DEBUG o.a.camel.component.jpa.JpaConsumer - Flushing EntityManager
+11:11:49.124 [Camel (MyCamel) thread #1 - jpa://org.mycompany.CamelTest] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+11:11:49.124 [Camel (MyCamel) thread #1 - jpa://org.mycompany.CamelTest] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+11:11:49.124 [Camel (MyCamel) thread #1 - jpa://org.mycompany.CamelTest] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 3 objects
+11:11:49.124 [Camel (MyCamel) thread #1 - jpa://org.mycompany.CamelTest] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+11:11:49.124 [Camel (MyCamel) thread #1 - jpa://org.mycompany.CamelTest] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+11:11:49.124 [Camel (MyCamel) thread #1 - jpa://org.mycompany.CamelTest] DEBUG o.h.internal.util.EntityPrinter - org.mycompany.CamelTest{seq_no=3, column1=AAA, column4=null, column3=5, column2=BBB, status=ACT}
+11:11:49.124 [Camel (MyCamel) thread #1 - jpa://org.mycompany.CamelTest] DEBUG o.h.internal.util.EntityPrinter - org.mycompany.CamelTest{seq_no=2, column1=AAA, column4=null, column3=5, column2=BBB, status=ACT}
+11:11:49.124 [Camel (MyCamel) thread #1 - jpa://org.mycompany.CamelTest] DEBUG o.h.internal.util.EntityPrinter - org.mycompany.CamelTest{seq_no=1, column1=AAA, column4=null, column3=5, column2=BBB, status=ACT}
+11:11:49.124 [Camel (MyCamel) thread #1 - jpa://org.mycompany.CamelTest] DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction commit
+11:11:49.124 [Camel (MyCamel) thread #1 - jpa://org.mycompany.CamelTest] DEBUG o.s.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [SessionImpl(1742023411<open>)]
+11:11:49.124 [Camel (MyCamel) thread #1 - jpa://org.mycompany.CamelTest] DEBUG o.h.e.t.internal.TransactionImpl - committing
+11:11:49.124 [Camel (MyCamel) thread #1 - jpa://org.mycompany.CamelTest] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+11:11:49.124 [Camel (MyCamel) thread #1 - jpa://org.mycompany.CamelTest] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+11:11:49.124 [Camel (MyCamel) thread #1 - jpa://org.mycompany.CamelTest] DEBUG o.h.e.t.internal.TransactionImpl - committing
+11:11:49.124 [Camel (MyCamel) thread #1 - jpa://org.mycompany.CamelTest] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+11:11:49.124 [Camel (MyCamel) thread #1 - jpa://org.mycompany.CamelTest] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+11:11:49.124 [Camel (MyCamel) thread #1 - jpa://org.mycompany.CamelTest] DEBUG o.s.orm.jpa.JpaTransactionManager - Closing JPA EntityManager [SessionImpl(1742023411<open>)] after transaction
+11:11:49.124 [Camel (MyCamel) thread #1 - jpa://org.mycompany.CamelTest] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
